@@ -1,0 +1,56 @@
+.dataShowNow {
+  display: flex;
+  width: 973px;
+  justify-content: space-between;
+  position: absolute;
+  top: 400px;
+  margin-left: 210px;
+}
+
+.dataShowNow p {
+  font-family: "PT Sans", sans-serif;
+  font-size: 200px;
+  font-weight: 700;
+  line-height: 160px;
+}
+
+.p1 {
+  color: #5d5fef;
+}
+
+.p2 {
+  color: #ef5da8;
+}
+
+.mobile-date-line {
+  display: none;
+}
+
+@media (max-width: 1440px) {
+  .dataShowNow {
+    display: flex;
+    width: 273px;
+    justify-content: space-between;
+    position: static;
+    margin-top: 56px;
+    margin-left: 0px;
+  }
+
+  .dataShowNow p {
+    font-family: "PT Sans", sans-serif;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 100px;
+  }
+
+  .mobile-date-line {
+    margin-top: 57px;
+    display: block;
+    position: static;
+    width: 280px;
+    height: 1px;
+    top: 293px;
+    left: 20px;
+    background-color: #c7cdd9;
+  }
+}

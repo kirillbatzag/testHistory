@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+
+.slider-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-left: 80px;
+}
+.year {
+  font-family: "Bebas Neue", sans-serif;
+  color: #3877ee;
+  font-size: 25px;
+}
+
+.swiper-container {
+  max-width: 1800px;
+  width: 100%;
+}
+
+.swiper-slider {
+  width: 100%;
+}
+
+.swiper-slider .swiper-slide {
+  display: flex;
+  align-items: center;
+}
+
+.backstep,
+.nextstep {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 0px solid #42567a80;
+  background-color: #ffffff;
+  color: #3877ee;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 10;
+  transition: opacity 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0px 0px 15px 6px rgba(56, 119, 238, 0.2);
+}
+
+.backstep {
+  left: -80px;
+}
+
+.nextstep {
+  right: 0px;
+}
+
+@media (max-width: 1440px) {
+  .backstep,
+  .nextstep {
+    display: none;
+  }
+
+  .slider-wrapper {
+    position: static;
+    margin-top: 20px;
+    margin-left: 0px;
+  }
+}

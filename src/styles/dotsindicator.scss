@@ -1,0 +1,23 @@
+@media (max-width: 1440px) {
+  .dots-container {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 16px;
+  }
+
+  .dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: #42567a;
+    opacity: 0.4;
+    transition: opacity 0.3s ease;
+    will-change: opacity, transform;
+  }
+
+  .dot.active {
+    opacity: 1;
+  }
+}

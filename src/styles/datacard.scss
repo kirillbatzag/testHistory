@@ -1,0 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  height: 135px;
+  width: 340px;
+}
+
+.year {
+  font-size: 25px;
+  font-weight: 400;
+  font-family: "Bebas Neue", sans-serif;
+  color: #3877ee;
+}
+
+.event-text {
+  white-space: pre-line;
+  font-size: 20px;
+}
+
+.card-text {
+  font-size: 20px;
+  color: #42567a;
+  font-family: "PT Sans", sans-serif;
+}
+
+@media (max-width: 1440px) {
+  .year {
+    font-size: 14px;
+  }
+
+  .card-text {
+    font-size: 14px;
+  }
+}
